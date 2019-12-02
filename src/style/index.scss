@@ -1,0 +1,23 @@
+:root {
+  --main-color: rgb(219, 18, 119, 0.7);
+  --mainL-color: rgba(253, 158, 206);
+  --mainD-color: rgb(102, 10, 90);
+  --sec-color: #ffffff;
+  --secL-color: rgb(253, 248, 178);
+  --secD-color: rgb(204, 190, 0);
+  --background-color: white;
+  --text-color: rgb(255, 255, 255);
+  --textD-color: rgb(0, 0, 0);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // Disable selection
+
+  &::selection {
+    background: #ffc0c0; /* WebKit/Blink Browsers */
+  }
+}
+@import "./main";
+@import "./header";
