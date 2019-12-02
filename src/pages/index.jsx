@@ -7,7 +7,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <h1>Hi people</h1>
-    <AniLink paintDrip to="contact">
+    <AniLink paintDrip hex="#ddabdd" to="contact">
       Go to Page 4
     </AniLink>
   </Layout>
