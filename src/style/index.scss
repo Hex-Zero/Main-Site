@@ -14,10 +14,13 @@
   padding: 0;
   box-sizing: border-box;
   // Disable selection
-
   &::selection {
     background: #ffc0c0; /* WebKit/Blink Browsers */
   }
 }
+body {
+  display: grid;
+}
 @import "./main";
 @import "./header";
+@import "./layout";
