@@ -1,3 +1,13 @@
 .layout-container {
   min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  .background-simbol {
+    position: absolute;
+    z-index: -5;
+    font-size: 70vh;
+    font-weight: 700;
+    color: rgb(245, 186, 245);
+    top: 20vh;
+  }
 }
