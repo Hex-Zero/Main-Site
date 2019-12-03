@@ -18,7 +18,7 @@
   box-sizing: border-box;
   // Disable selection
   &::selection {
-    background: #ffc0c0; /* WebKit/Blink Browsers */
+    background: #ffc0c000; /* WebKit/Blink Browsers */
   }
 }
 body {
