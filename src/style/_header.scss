@@ -20,6 +20,9 @@ header {
     @media only screen and (max-width: 700px) {
       margin-right: 4vw;
     }
+    .active {
+      color: var(--mainLT-color);
+    }
   }
 }
 @keyframes showlinks {

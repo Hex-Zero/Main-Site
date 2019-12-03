@@ -8,7 +8,7 @@ const Header = () => (
         duration={1}
         activeClassName="active"
         paintDrip
-        hex="#ddabdd"
+        hex="#852766"
         to="/"
       >
         Home
@@ -17,7 +17,7 @@ const Header = () => (
         duration={1}
         activeClassName="active"
         paintDrip
-        hex="#ddabdd"
+        hex="#852766"
         to="portfolio"
       >
         Portfolio
@@ -26,7 +26,7 @@ const Header = () => (
         duration={1}
         activeClassName="active"
         paintDrip
-        hex="#ddabdd"
+        hex="#852766"
         to="contact"
       >
         Contact
