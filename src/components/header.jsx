@@ -4,10 +4,31 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 const Header = () => (
   <header>
     <nav>
-      <AniLink paintDrip hex="#ddabdd" to="/">
-        Main
+      <AniLink
+        duration={1}
+        activeClassName="active"
+        paintDrip
+        hex="#ddabdd"
+        to="/"
+      >
+        Home
       </AniLink>
-      <AniLink paintDrip hex="#ddabdd" to="contact">
+      <AniLink
+        duration={1}
+        activeClassName="active"
+        paintDrip
+        hex="#ddabdd"
+        to="portfolio"
+      >
+        Portfolio
+      </AniLink>
+      <AniLink
+        duration={1}
+        activeClassName="active"
+        paintDrip
+        hex="#ddabdd"
+        to="contact"
+      >
         Contact
       </AniLink>
     </nav>

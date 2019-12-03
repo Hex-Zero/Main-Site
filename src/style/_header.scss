@@ -1,15 +1,29 @@
 header {
   display: grid;
   nav {
+    display: grid;
     justify-self: end;
-    margin-right: 17vw;
+    margin-right: calc(21vw - 13vh);
     margin-top: 16px;
-    font-size: calc(1.1vh + 0.4vw);
+    font-size: calc(1.7vh + 0.4vw);
+    grid-template-columns: auto auto auto;
     a {
+      overflow: hidden;
       margin-left: 20px;
       text-decoration: none;
       color: var(--main-color);
       font-weight: 800;
+      width: auto;
+      opacity: 0;
+      animation: showlinks 0.7s ease 0.3s forwards;
     }
+    @media only screen and (max-width: 700px) {
+      margin-right: 4vw;
+    }
+  }
+}
+@keyframes showlinks {
+  to {
+    opacity: 1;
   }
 }
