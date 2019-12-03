@@ -1,15 +1,16 @@
 import React from "react"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <AniLink paintDrip hex="#ddabdd" to="contact">
-      Go to Page 4
-    </AniLink>
+    <div className="index-name">
+      <h1>Hex-Zero</h1>
+      <h2 className="name-aka">
+        <span className="aka">aka:</span> Mantas Brasiunas
+      </h2>
+    </div>
   </Layout>
 )
 

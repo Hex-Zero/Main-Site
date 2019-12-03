@@ -1,0 +1,15 @@
+header {
+  display: grid;
+  nav {
+    justify-self: end;
+    margin-right: 17vw;
+    margin-top: 16px;
+    font-size: calc(1.1vh + 0.4vw);
+    a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: var(--main-color);
+      font-weight: 800;
+    }
+  }
+}

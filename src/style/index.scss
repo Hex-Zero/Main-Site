@@ -1,9 +1,9 @@
 :root {
   --main-color: rgb(173, 65, 119);
-  --mainL-color: rgba(253, 158, 206);
+  --mainL-color: rgb(245, 158, 253);
   --mainD-color: rgb(102, 10, 90);
   --mainT-color: rgba(219, 18, 119, 0.253);
-  --mainLT-color: rgba(253, 158, 206);
+  --mainLT-color: rgba(245, 158, 253, 0.253);
   --mainDT-color: rgba(102, 10, 90, 0.247);
   --sec-color: #ffffff;
   --secL-color: rgb(253, 248, 178);
@@ -27,3 +27,24 @@ body {
 @import "./main";
 @import "./header";
 @import "./layout";
+
+.index-name {
+  position: absolute;
+  top: 24.5vh;
+  left: 21vw;
+  color: var(--mainDT-color);
+  font-size: calc(2.2vh + 0.8vw);
+  transform: rotate(-5.5deg);
+  cursor: default;
+  .name-aka {
+    color: var(--mainLT-color);
+    .aka {
+      margin-left: 3.4vw;
+      color: rgba(255, 255, 255, 0.075);
+    }
+  }
+  @media only screen and (max-width: 700px) {
+    left: 2vw;
+    top: 27vh;
+  }
+}

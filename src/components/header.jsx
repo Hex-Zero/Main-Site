@@ -1,11 +1,16 @@
-import { Link } from "gatsby"
 import React from "react"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <header>
-    <div>
-      <h1></h1>
-    </div>
+    <nav>
+      <AniLink paintDrip hex="#ddabdd" to="/">
+        Main
+      </AniLink>
+      <AniLink paintDrip hex="#ddabdd" to="contact">
+        Contact
+      </AniLink>
+    </nav>
   </header>
 )
 
