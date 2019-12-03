@@ -7,7 +7,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <div className="index-name">
-      <h1>Hex-Zero</h1>
+      <h1 className="text-spark">Hex-Zero</h1>
       <h2 className="name-aka">
         <span className="aka">aka:</span> Mantas Brasiunas
       </h2>
@@ -18,7 +18,7 @@ const IndexPage = () => (
       paintDrip
       hex="#852766"
       to="portfolio"
-      className="my-work-button"
+      className="my-work-button text-spark"
     >
       See My Work
     </AniLink>

@@ -34,7 +34,8 @@ body {
   left: 21vw;
   color: var(--mainDT-color);
   font-size: calc(2.2vh + 0.8vw);
-  transform: rotate(-5.5deg);
+  transform: rotateZ(-5.5deg) rotateY(5.5deg);
+
   cursor: default;
   .name-aka {
     color: var(--mainLT-color);
@@ -48,14 +49,7 @@ body {
     top: 27vh;
   }
 }
-.my-work-button {
-  text-decoration: none;
-  font-size: calc(2.2vh + 0.8vw);
-  font-weight: 800;
-  position: absolute;
-  bottom: calc(10vh + 8vw);
-  right: 18vw;
-
+.text-spark {
   background: linear-gradient(
     to right,
     var(--main-color) 20%,
@@ -68,4 +62,12 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: shine 15s linear infinite;
+}
+.my-work-button {
+  text-decoration: none;
+  font-size: calc(2.2vh + 0.8vw);
+  font-weight: 800;
+  position: absolute;
+  bottom: calc(10vh + 8vw);
+  right: 18vw;
 }

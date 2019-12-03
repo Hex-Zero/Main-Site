@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
   return (
     <div className="layout-container">
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div className="background-simbol">{"</>"}</div>
+      <div className="background-simbol text-spark">{"</>"}</div>
       <main>{children}</main>
     </div>
   )

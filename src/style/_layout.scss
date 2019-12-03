@@ -9,18 +9,6 @@
     font-weight: 700;
     top: 33vh;
     transform: rotate(-8.4deg);
-    background: linear-gradient(
-      to right,
-      var(--mainT-color) 20%,
-      var(--mainDT-color) 40%,
-      var(--mainDT-color) 60%,
-      var(--mainT-color) 80%
-    );
-    background-size: 200% auto;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: shine 14s linear infinite;
   }
 }
 @keyframes shine {
