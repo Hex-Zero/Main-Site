@@ -5,9 +5,28 @@
   .background-simbol {
     position: absolute;
     z-index: -5;
-    font-size: 70vh;
+    font-size: calc(25vh + 15vw);
     font-weight: 700;
-    color: rgb(245, 186, 245);
-    top: 20vh;
+    top: 33vh;
+    transform: rotate(-8.3deg);
+    background: linear-gradient(
+      to right,
+      var(--mainT-color) 20%,
+      var(--mainDT-color) 40%,
+      var(--mainDT-color) 60%,
+      var(--mainT-color) 80%
+    );
+    background-size: 200% auto;
+
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 20s linear infinite;
+  }
+}
+@keyframes shine {
+  to {
+    background-position: -200% center;
   }
 }
