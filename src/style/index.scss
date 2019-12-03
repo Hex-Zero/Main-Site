@@ -48,3 +48,24 @@ body {
     top: 27vh;
   }
 }
+.my-work-button {
+  text-decoration: none;
+  font-size: calc(2.2vh + 0.8vw);
+  font-weight: 800;
+  position: absolute;
+  bottom: 25vh;
+  right: 18vw;
+
+  background: linear-gradient(
+    to right,
+    var(--main-color) 20%,
+    var(--mainD-color) 40%,
+    var(--mainD-color) 60%,
+    var(--main-color) 80%
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 15s linear infinite;
+}
