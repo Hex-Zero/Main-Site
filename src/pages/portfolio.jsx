@@ -7,25 +7,29 @@ const portfolio = () => {
     {
       imageName: "mi",
       title: "Makeup Island",
-      description: "lotnsraeitnsreiatn",
+      description:
+        "Online Makeup store. Fully functional E-commerce application build with Gatsby for maximised SEO.",
       url: "https://makeupisland.netlify.com",
     },
     {
       imageName: "vsp",
       title: "Vita Smile Photography",
-      description: "lotnsraeitnsreiatn",
+      description:
+        "Landing page for a local photography business. Build with React and Bootstrap. Currently rebuilding...",
       url: "https://makeupisland.netlify.com",
     },
     {
       imageName: "rav",
       title: "Ravenouse",
-      description: "lotnsraeitnsreiatn",
+      description:
+        "Restaurant finder application. Pulling information of a Yelp API. Build for one of the lessons at Codecademy.com.",
       url: "https://makeupisland.netlify.com",
     },
     {
       imageName: "bud",
       title: "Budget Calculator",
-      description: "lotnsraeitnsreiatn",
+      description:
+        "React hocks in action with a small budget calculator application.",
       url: "https://makeupisland.netlify.com",
     },
   ]
