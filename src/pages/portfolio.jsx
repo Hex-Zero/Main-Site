@@ -16,21 +16,21 @@ const portfolio = () => {
       title: "Vita Smile Photography",
       description:
         "Landing page for a local photography business. Build with React and Bootstrap. Currently rebuilding...",
-      url: "https://makeupisland.netlify.com",
+      url: "https://vita-smile-photography.uk/",
     },
     {
       imageName: "rav",
       title: "Ravenouse",
       description:
         "Restaurant finder application. Pulling information of a Yelp API. Build for one of the lessons at Codecademy.com.",
-      url: "https://makeupisland.netlify.com",
+      url: "https://hex-zero.github.io/React-Codecademy/",
     },
     {
       imageName: "bud",
       title: "Budget Calculator",
       description:
         "React hocks in action with a small budget calculator application.",
-      url: "https://makeupisland.netlify.com",
+      url: "https://hex-zero.github.io/React-Hook-App/",
     },
   ]
   return (
