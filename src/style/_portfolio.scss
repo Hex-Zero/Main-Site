@@ -15,6 +15,11 @@
       width: 90vw;
     }
     &:nth-child(even) {
+      &:nth-child(2) {
+        @media only screen and (max-width: 750px) {
+          margin-bottom: 5vh;
+        }
+      }
       .links {
         justify-items: end;
         grid-template-columns: auto 30vh;
