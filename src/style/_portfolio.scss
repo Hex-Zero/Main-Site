@@ -1,18 +1,26 @@
 .portfolio {
   display: grid;
   margin-top: 64px;
+  margin-bottom: 64px;
   justify-content: end;
   margin-right: 64px;
-
+  @media only screen and (max-width: 1300px) {
+    justify-content: center;
+    margin-right: 0;
+  }
   .link-container {
     width: 60vw;
     justify-content: center;
-
+    @media only screen and (max-width: 1300px) {
+      width: 90vw;
+    }
     &:nth-child(even) {
       .links {
         justify-items: end;
         grid-template-columns: auto 30vh;
-
+        @media only screen and (max-width: 750px) {
+          grid-template-columns: auto;
+        }
         .image-link400 {
           &:nth-of-type(1) {
             order: 2;
@@ -30,8 +38,11 @@
         display: grid;
         grid-template-columns: 30vh auto;
         justify-items: start;
-        grid-column-gap: 32px;
-        padding: 15px;
+        grid-column-gap: 1vw;
+        padding: calc(0.3vh + 0.3vw);
+        @media only screen and (max-width: 750px) {
+          grid-template-columns: auto;
+        }
         .image-link400 {
           align-self: center;
           width: 30vh;
