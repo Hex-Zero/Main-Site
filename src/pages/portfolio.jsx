@@ -4,27 +4,49 @@ import ImageLink400 from "../images/imageLink"
 
 const portfolio = () => {
   const info = [
-    { imageName: "mi" },
-    { imageName: "mi" },
-    { imageName: "mi" },
-    { imageName: "mi" },
+    {
+      imageName: "mi",
+      title: "Makeup Island",
+      description: "lotnsraeitnsreiatn",
+      url: "https://makeupisland.netlify.com",
+    },
+    {
+      imageName: "vsp",
+      title: "Vita Smile Photography",
+      description: "lotnsraeitnsreiatn",
+      url: "https://makeupisland.netlify.com",
+    },
+    {
+      imageName: "rav",
+      title: "Ravenouse",
+      description: "lotnsraeitnsreiatn",
+      url: "https://makeupisland.netlify.com",
+    },
+    {
+      imageName: "bud",
+      title: "Budget Calculator",
+      description: "lotnsraeitnsreiatn",
+      url: "https://makeupisland.netlify.com",
+    },
   ]
   return (
     <Layout>
       <div className="portfolio">
         {info.map(item => {
           return (
-            <div className="link-container">
-              <div className="links">
-                <ImageLink400
-                  imageName={item.imageName}
-                  className="image-link400"
-                />
-                <h1 className="link-text">
-                  lotnsraeitnsreiatn ser natei asrnetoi nsraei thrsei hteisr
-                  nteisr niers
-                </h1>
-              </div>
+            <div key={item.imageName} className="link-container">
+              <a href={item.url}>
+                <div className="links">
+                  <ImageLink400
+                    imageName={item.imageName}
+                    className="image-link400"
+                  />
+                  <div className="link-text">
+                    <h1>{item.title}</h1>
+                    <h2>{item.description}</h2>
+                  </div>
+                </div>
+              </a>
             </div>
           )
         })}

@@ -8,7 +8,7 @@ const ImageLink400 = ({ imageName, className }) => {
       allFile(
         filter: {
           relativeDirectory: { eq: "images" }
-          extension: { eq: "png" }
+          extension: { eq: "jpg" }
         }
       ) {
         nodes {

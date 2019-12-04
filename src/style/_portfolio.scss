@@ -1,41 +1,55 @@
 .portfolio {
   display: grid;
-  margin-top: 32px;
-  justify-content: center;
+  margin-top: 64px;
+  justify-content: end;
+  margin-right: 64px;
+
   .link-container {
-    width: 80vw;
+    width: 60vw;
     justify-content: center;
+
     &:nth-child(even) {
       .links {
+        justify-items: end;
+        grid-template-columns: auto 30vh;
+
         .image-link400 {
           &:nth-of-type(1) {
             order: 2;
           }
         }
         .link-text {
+          justify-self: end;
           text-align: right;
         }
       }
     }
-    .links {
-      display: grid;
-      grid-template-columns: auto auto;
-      justify-content: space-between;
-      grid-column-gap: 32px;
-      .image-link400 {
-        width: 400px;
-        opacity: 0.9;
-        border-radius: 100px;
-      }
-      .link-text {
-        align-self: center;
-        padding: 32px;
-      }
-      .right {
-        text-align: right;
-      }
-      &:hover {
-        background: rgba(255, 255, 255, 0.103);
+    a {
+      text-decoration: none;
+      .links {
+        display: grid;
+        grid-template-columns: 30vh auto;
+        justify-items: start;
+        grid-column-gap: 32px;
+        padding: 5px;
+        .image-link400 {
+          align-self: center;
+          width: 30vh;
+          opacity: 0.7;
+          border-radius: 100px;
+        }
+        .link-text {
+          justify-self: start;
+          align-self: center;
+          padding: 32px;
+          color: var(--mainLT-color);
+        }
+        .right {
+          text-align: right;
+        }
+        &:hover {
+          background: rgba(255, 255, 255, 0.103);
+        }
       }
     }
   }
