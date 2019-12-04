@@ -1,5 +1,42 @@
 .portfolio {
-  .image-link400 {
-    width: 400px;
+  display: grid;
+  margin-top: 32px;
+  justify-content: center;
+  .link-container {
+    width: 80vw;
+    justify-content: center;
+    &:nth-child(even) {
+      .links {
+        .image-link400 {
+          &:nth-of-type(1) {
+            order: 2;
+          }
+        }
+        .link-text {
+          text-align: right;
+        }
+      }
+    }
+    .links {
+      display: grid;
+      grid-template-columns: auto auto;
+      justify-content: space-between;
+      grid-column-gap: 32px;
+      .image-link400 {
+        width: 400px;
+        opacity: 0.9;
+        border-radius: 100px;
+      }
+      .link-text {
+        align-self: center;
+        padding: 32px;
+      }
+      .right {
+        text-align: right;
+      }
+      &:hover {
+        background: rgba(255, 255, 255, 0.103);
+      }
+    }
   }
 }
