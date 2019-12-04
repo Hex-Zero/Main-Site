@@ -1,0 +1,127 @@
+.contact {
+  display: grid;
+  margin-top: 8vh;
+  grid-template-columns: auto auto;
+  label {
+    font-weight: 900;
+    margin-bottom: 1vh;
+  }
+  .form-container {
+    margin: 40px;
+    justify-self: center;
+    display: grid;
+    justify-content: center;
+    list-style-type: none;
+    grid-template-columns: auto;
+    border: none;
+    border-radius: 4px;
+    padding: 20px;
+    overflow: hidden;
+    .send-button {
+      background-color: var(--main-color);
+      color: var(--text-color);
+      font-weight: 800;
+      margin-top: 20px;
+      margin-bottom: 0;
+      padding: 6px 12px;
+      justify-self: center;
+      transition: transform 300ms ease, background-color 600ms ease,
+        color 600ms ease;
+      &:hover {
+        background-color: var(--text-color);
+        transform: scale(1.12);
+        color: var(--mainL-color);
+      }
+    }
+    form {
+      color: var(--main-color);
+      display: grid;
+      justify-content: center;
+      list-style-type: none;
+      grid-template-columns: auto;
+      input {
+        transition: transform 300ms ease;
+        font-weight: 600;
+        &::placeholder {
+          color: var(--mainLT-color);
+          text-align: center;
+        }
+        &:focus {
+          outline-color: var(--mainL-color);
+          transform: scale(1.015);
+        }
+        background: rgba(255, 255, 255, 0.397);
+        border: none;
+        color: var(--mainD-color);
+        padding: 5px;
+        margin-bottom: 32px;
+        border-radius: 2px;
+      }
+      textarea {
+        transition: transform 300ms ease;
+        font-weight: 900;
+        &::placeholder {
+          color: var(--mainLT-color);
+          text-align: center;
+        }
+        &:focus {
+          outline-color: var(--mainLT-color);
+          border: solid 2px var(--mainLT-color);
+          transform: scale(1.015);
+        }
+        background: rgba(255, 255, 255, 0.397);
+        padding: 5px;
+        border: none;
+        border-radius: 2px;
+        height: 300px;
+        max-width: 500px;
+        min-width: 320px;
+        color: var(--mainD-color);
+      }
+    }
+  }
+  .links {
+    position: absolute;
+    top: 1vh;
+    left: 1vh;
+    // bottom: 1vh;
+    // right: 13vw;
+    opacity: 0.4;
+    .social {
+      #Facebook {
+        color: #3b569c;
+        &:hover {
+          color: #2d4175;
+        }
+      }
+      #Instagram svg * {
+        fill: url(#instagramSvg);
+      }
+      #Instagram:hover svg * {
+        fill: url(#instagramSvgHover);
+      }
+      #Twitter {
+        color: #1ea1f2;
+        &:hover {
+          color: #1575b1;
+        }
+      }
+      #Linkedin {
+        color: #0077b5;
+        &:hover {
+          color: #035a88;
+        }
+      }
+      #GitHub {
+        color: black;
+        &:hover {
+          color: rgb(71, 71, 71);
+        }
+      }
+      .link {
+        font-size: 36px;
+        position: relative;
+      }
+    }
+  }
+}

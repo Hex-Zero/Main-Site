@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import ImageLink400 from "../images/imageLink"
+import SEO from "../components/seo"
 
 const portfolio = () => {
   const info = [
@@ -35,6 +36,7 @@ const portfolio = () => {
   ]
   return (
     <Layout>
+      <SEO title="Portfolio" />
       <div className="portfolio">
         {info.map(item => {
           return (
