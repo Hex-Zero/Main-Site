@@ -7,43 +7,51 @@ import {
   FaTwitter,
 } from "react-icons/fa"
 const SocialLink = () => {
-  const [Icons] = useState([
-    <FaFacebookSquare />,
-    <FaInstagram />,
-    <FaTwitter />,
-    <FaLinkedin />,
-    <FaGithubSquare />,
-  ])
-  const [Id] = useState([
-    "Facebook",
-    "Instagram",
-    "Twitter",
-    "Linkedin",
-    "GitHub",
-  ])
-  const [Links] = useState([
-    "https://www.facebook.com/HexZer0",
-    "https://www.instagram.com/hexzer0/",
-    "https://twitter.com/Hex_Zero_",
-    "https://www.linkedin.com/in/mantas-brasiunas/",
-    "https://github.com/Hex-Zero",
+  const [info] = useState([
+    {
+      icon: <FaFacebookSquare />,
+      id: "Facebook",
+      url: "https://www.facebook.com/HexZer0",
+    },
+    {
+      icon: <FaInstagram />,
+      id: "Instagram",
+      url: "https://www.instagram.com/hexzer0/",
+    },
+    {
+      icon: <FaTwitter />,
+      id: "Twitter",
+      url: "https://twitter.com/Hex_Zero_",
+    },
+    {
+      icon: <FaLinkedin />,
+      id: "Linkedin",
+      url: "https://www.linkedin.com/in/mantas-brasiunas/",
+    },
+    {
+      icon: <FaGithubSquare />,
+      id: "GitHub",
+      url: "https://github.com/Hex-Zero",
+    },
   ])
 
   return (
     <React.Fragment>
       <div className="social">
-        {Icons.map((icon, index) => (
-          <a
-            className="link"
-            id={Id[index]}
-            key={Id[index]}
-            href={Links[index]}
-            target="__blank"
-            rel="noopener noreferrer"
-          >
-            {icon}
-          </a>
-        ))}
+        {info.map(item => {
+          return (
+            <a
+              className="link"
+              id={item.id}
+              key={item.id}
+              href={item.url}
+              target="__blank"
+              rel="noopener noreferrer"
+            >
+              {item.icon}
+            </a>
+          )
+        })}
       </div>
       <svg width="0" height="0">
         <radialGradient id="instagramSvg" r="150%" cx="30%" cy="107%">

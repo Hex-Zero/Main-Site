@@ -41,7 +41,7 @@ const portfolio = () => {
         {info.map(item => {
           return (
             <div key={item.imageName} className="link-container">
-              <a href={item.url}>
+              <a href={item.url} target="__blank" rel="noopener noreferrer">
                 <div className="links">
                   <ImageLink400
                     imageName={item.imageName}
