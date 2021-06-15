@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import ImageLink400 from "../images/imageLink"
-import SEO from "../components/seo"
+import Seo from "../components/SEO"
 
 const portfolio = () => {
   const info = [
@@ -36,9 +36,9 @@ const portfolio = () => {
   ]
   return (
     <Layout>
-      <SEO title="Portfolio" />
+      <Seo title="Portfolio" />
       <div className="portfolio">
-        {info.map(item => {
+        {info.map((item) => {
           return (
             <div key={item.imageName} className="link-container">
               <a href={item.url} target="__blank" rel="noopener noreferrer">

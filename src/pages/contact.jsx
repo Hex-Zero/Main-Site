@@ -1,12 +1,12 @@
 import React from "react"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/SEO"
 import ContactForm from "../components/contactForm"
 import SocialLink from "../components/socialLinks"
-const contact = () => {
+const Contact = () => {
   return (
     <Layout>
-      <SEO title="Contact" />
+      <Seo title="Contact" />
 
       <div className="contact">
         <div></div>
@@ -19,4 +19,4 @@ const contact = () => {
   )
 }
 
-export default contact
+export default Contact

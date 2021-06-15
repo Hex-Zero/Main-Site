@@ -22,8 +22,19 @@ module.exports = {
       options: {
         name: `Hex Zero`,
         short_name: `Main`,
+        background_color: `#f7f0eb`,
+        theme_color: `#a2466c`,
         start_url: `/`,
-        icon: `src/images/Main-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/Main-icon.png`,
+        display: `standalone`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /images/,
+        },
       },
     },
   ],

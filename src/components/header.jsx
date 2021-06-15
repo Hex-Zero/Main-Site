@@ -18,7 +18,7 @@ const Header = () => (
         activeClassName="active"
         paintDrip
         hex="#852766"
-        to="portfolio"
+        to="/portfolio"
       >
         Portfolio
       </AniLink>
@@ -27,7 +27,7 @@ const Header = () => (
         activeClassName="active"
         paintDrip
         hex="#852766"
-        to="contact"
+        to="/contact"
       >
         Contact
       </AniLink>
