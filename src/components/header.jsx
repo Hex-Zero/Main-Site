@@ -1,5 +1,6 @@
 import React from "react"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
+import SocialLink from "../components/socialLinks"
 
 const Header = () => (
   <header>
@@ -32,6 +33,11 @@ const Header = () => (
         Contact
       </AniLink>
     </nav>
+    <div className="contact">
+      <div className="links">
+        <SocialLink />
+      </div>
+    </div>
   </header>
 )
 

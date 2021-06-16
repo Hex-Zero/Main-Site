@@ -51,6 +51,12 @@ body {
     top: 27vh;
   }
 }
+
+.max-regular-text {
+  text-decoration: none;
+  color: #b65ca7;
+}
+
 .text-spark {
   background: linear-gradient(
     to right,
@@ -65,7 +71,8 @@ body {
   -webkit-text-fill-color: transparent;
   animation: shine 15s linear infinite;
 }
-.my-work-button {
+
+.max-see-my-work-container {
   text-decoration: none;
   font-size: calc(2.2vh + 0.8vw);
   font-weight: 800;

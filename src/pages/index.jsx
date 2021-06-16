@@ -26,16 +26,18 @@ const IndexPage = () => (
       <LoadginAnimation />
       <div id="maxLoadingBar"></div>
     </div>
-    <AniLink
-      duration={1}
-      activeClassName="active"
-      paintDrip
-      hex="#852766"
-      to="/portfolio"
-      className="my-work-button text-spark"
-    >
-      See My Work
-    </AniLink>
+    <div className="max-see-my-work-container">
+      <AniLink
+        duration={1}
+        activeClassName="active"
+        paintDrip
+        hex="#852766"
+        to="/portfolio"
+        className="max-regular-text"
+      >
+        See My Work
+      </AniLink>
+    </div>
   </Layout>
 )
 

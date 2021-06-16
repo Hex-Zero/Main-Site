@@ -43,12 +43,11 @@
         transition: transform 300ms ease;
         font-weight: 600;
         &::placeholder {
-          color: var(--mainLT-color);
+          color: #feff;
           text-align: center;
         }
         &:focus {
           outline-color: var(--mainL-color);
-          transform: scale(1.015);
         }
         background: rgba(255, 255, 255, 0.397);
         border: none;
@@ -61,13 +60,13 @@
         transition: transform 300ms ease;
         font-weight: 900;
         &::placeholder {
-          color: var(--mainLT-color);
+          color: #feff;
           text-align: center;
+          font-size: 16px;
         }
         &:focus {
           outline-color: var(--mainLT-color);
           border: solid 2px var(--mainLT-color);
-          transform: scale(1.015);
         }
         background: rgba(255, 255, 255, 0.397);
         padding: 5px;
@@ -82,7 +81,7 @@
   }
   .links {
     position: absolute;
-    top: 1vh;
+    top: 1.3vh;
     left: 1vh;
     opacity: 0.4;
     .social {
@@ -117,7 +116,7 @@
         }
       }
       .link {
-        font-size: 36px;
+        font-size: 26px;
         position: relative;
       }
     }

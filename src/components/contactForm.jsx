@@ -12,7 +12,7 @@ const ContactForm = () => {
       >
         <input type="hidden" name="bot-field" />
         <input type="hidden" name="form-name" value="contact" />
-        <label htmlFor="email" className="text-spark">
+        <label htmlFor="email" className="max-regular-text">
           Email
         </label>
         <input
@@ -21,7 +21,7 @@ const ContactForm = () => {
           id="email"
           placeholder="Your e-mail address"
         ></input>
-        <label htmlFor="subject" className="text-spark">
+        <label htmlFor="subject" className="max-regular-text">
           Subject
         </label>
         <input
@@ -30,7 +30,7 @@ const ContactForm = () => {
           id="subject"
           placeholder="Subject"
         ></input>
-        <label htmlFor="message" className="text-spark">
+        <label htmlFor="message" className="max-regular-text">
           Message
         </label>
         <textarea
