@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import ImageLink400 from "../images/imageLink"
-import Seo from "../components/SEO"
+import Seo from "../components/seo"
 
 const portfolio = () => {
   const info = [
