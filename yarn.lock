@@ -2343,10 +2343,10 @@ axe-core@^4.0.2:
   resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-4.2.2.tgz"
 
 axios@^0.21.0, axios@^0.21.1:
-  version "0.21.1"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.1.tgz"
+  version "0.21.4"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.4.tgz#c67b90dc0568e5c1cf2b0b858c43ba28e2eda575"
   dependencies:
-    follow-redirects "^1.10.0"
+    follow-redirects "^1.14.0"
 
 axobject-query@^2.2.0:
   version "2.2.0"
@@ -4985,9 +4985,9 @@ flatted@^3.1.0:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.1.1.tgz"
 
-follow-redirects@^1.0.0, follow-redirects@^1.10.0:
-  version "1.14.1"
-  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.1.tgz"
+follow-redirects@^1.0.0, follow-redirects@^1.14.0:
+  version "1.14.9"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.9.tgz#dd4ea157de7bfaf9ea9b3fbd85aa16951f78d8d7"
 
 for-each@^0.3.3:
   version "0.3.3"
